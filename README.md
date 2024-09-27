@@ -23,5 +23,8 @@ Utils personalizzate per VS code
 
 > Tip: I comandi funzionano sulla selezione del testo
 
+## Install 
+> code --install-extension d4n73-utils-1.0.0.vsix     
+
 
 **Enjoy!**
