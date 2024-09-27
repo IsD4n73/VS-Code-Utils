@@ -1,0 +1,113 @@
+{
+  "name": "d4n73-utils",
+  "displayName": "d4n73-utils",
+  "description": "Custom utils for VS Code",
+  "publisher": "D4n73",
+  "version": "1.0.0",
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IsD4n73"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "d4n73-utils.uriEncode",
+        "title": "Codifica URL",
+        "category": "d4n73-utils"
+      },
+      {
+        "command": "d4n73-utils.uriDecodde",
+        "title": "Decodifica URL",
+        "category": "d4n73-utils"
+      },
+      {
+        "command": "d4n73-utils.baseToText",
+        "title": "Converti Base64 a testo",
+        "category": "d4n73-utils"
+      },
+      {
+        "command": "d4n73-utils.textToBase",
+        "title": "Converti testo a Base64",
+        "category": "d4n73-utils"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "d4n73-utils.textToBase",
+          "when": "editorHasSelection",
+          "group": "modifica"
+        },
+        {
+          "command": "d4n73-utils.baseToText",
+          "when": "editorHasSelection",
+          "group": "modifica"
+        },
+        {
+          "command": "d4n73-utils.uriEncode",
+          "when": "editorHasSelection",
+          "group": "modifica"
+        },
+        {
+          "command": "d4n73-utils.uriDecodde",
+          "when": "editorHasSelection",
+          "group": "modifica"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "d4n73-utils.textToBase",
+        "when": "editorHasSelection",
+        "mac": "",
+        "key": ""
+      },
+      {
+        "command": "d4n73-utils.baseToText",
+        "when": "editorHasSelection",
+        "mac": "",
+        "key": ""
+      },
+      {
+        "command": "d4n73-utils.uriEncode",
+        "when": "editorHasSelection",
+        "mac": "",
+        "key": ""
+      },
+      {
+        "command": "d4n73-utils.uriDecodde",
+        "when": "editorHasSelection",
+        "mac": "",
+        "key": ""
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
