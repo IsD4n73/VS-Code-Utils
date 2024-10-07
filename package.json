@@ -3,7 +3,7 @@
   "displayName": "d4n73-utils",
   "description": "Custom utils for VS Code",
   "publisher": "D4n73",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "icon": "images/logo.png",
   "engines": {
     "vscode": "^1.93.0"
