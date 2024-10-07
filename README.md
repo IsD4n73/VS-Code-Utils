@@ -8,6 +8,7 @@ Utils personalizzate per VS code
 - Conversione da testo a base 64
 - Codifica URl utilizzando encodeURIComponent
 - Decodifica URl utilizzando decodeURIComponent
+- Creazione del testo lorem ipsum
 
 <br>
 

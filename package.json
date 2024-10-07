@@ -38,6 +38,11 @@
         "command": "d4n73-utils.textToBase",
         "title": "Converti testo a Base64",
         "category": "d4n73-utils"
+      },
+      {
+        "command": "d4n73-utils.generateLoremIpsum",
+        "title": "Genera testo Lorem Ipsum",
+        "category": "d4n73-utils"
       }
     ],
     "menus": {
@@ -60,6 +65,11 @@
         {
           "command": "d4n73-utils.uriDecodde",
           "when": "editorHasSelection",
+          "group": "modifica"
+        },
+        {
+          "command": "d4n73-utils.generateLoremIpsum",
+          "when": "editorTextFocus",
           "group": "modifica"
         }
       ]
